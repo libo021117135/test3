@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+     <EditText
+         android:id="@+id/cityName"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="请输入城市的名称"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查询天气"
+        android:onClick="button_click_2"
+        app:layout_constraintTop_toBottomOf="@+id/cityName"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resultText"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
